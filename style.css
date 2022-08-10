@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    background: #e1d3b6;
+}
+#main{
+    display: flex;
+    flex-wrap: wrap;
+    background: white;
+}
+#newclass{
+    background-color: white;
+        display: flex;
+        flex-wrap: wrap;
+        height: 300px;
+        width: 300px;
+        border: 2px solid #90604c;
+
+}
+#main>*{
+    background: white;
+}
+#newclass>*{
+    background: white;
+}
+#etch{
+    font-size: 30px;
+    font-family: 'Metal Mania', cursive; 
+    display: flex;
+    justify-content: center;
+    background-color: #c0a290;
+    color: #94847d;
+    box-shadow: 0px 4px 4px 4px inset #90604c;
+}
+.gridpane,.inputs{
+    margin: 2%;
+    display: flex;
+    justify-content: center;
+}
+.inputs>*{
+    margin: 2px;
+}
+#main{
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    height: 300px;
+    width: 300px;
+    border:2px solid #90604c;
+}
+#grid,#sub,#refresh{
+    height: 38px;
+    width: 70px;
+    font-size: 20px;
+    background: #b98e77;
+    color: #90604c;
+    border:2px solid #90604c;
+    font-family: 'Just Another Hand', cursive;
+
+}
+#color{
+    border: none;
+    height: 43px;
+    width: 70px;
+}
+#choose,legend{
+    font-family: 'Just Another Hand', cursive;
+    color: #90604c;
+    font-size: 20px;
+}
+.fields{
+    width: 300px;
+    position: absolute;
+    top: 30vh;
+    left: 82vh;
+    border: 2px solid #90604c;
+}
+.fields>*{
+    margin: 2%;
+}
+#nogrids{
+    width: 250px;
+    height: 30px;
+    border: 2px solid saddlebrown;
+    background-color: beige;
+}
+.sub{
+    margin: 2%;
+    display: flex;
+    justify-content: center;
+}
+@media only screen and (max-width:600px) {
+    .fields {
+            width: 300px;
+            position: absolute;
+            top: 20vh;
+            left: 19.5vh;
+            border: 2px solid #90604c;
+        }
+    
+}
