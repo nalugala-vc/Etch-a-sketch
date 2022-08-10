@@ -8,7 +8,10 @@ let refresh=document.getElementById("refresh");
 refresh.addEventListener("click",Refresh);
 function Submit(){
     let inputNumbergrid=document.getElementById("nogrids").value;
-    let color=document.getElementById("color").value;
+    if(inputNumbergrid<10||inputNumbergrid>100){
+        document.getElementById("legend").innerHTML="Invalid Number"
+    }else{
+        let color=document.getElementById("color").value;
     for(let i=0;i<inputNumbergrid;i++){
     for(let j=0;j<inputNumbergrid;j++){
         let div=document.createElement("div");
@@ -32,6 +35,7 @@ function Submit(){
         main.style.display="none";
         document.getElementById("gridpanee").append(main2);
         document.getElementById("fields").style.display="none";
+    }
 }
 function Refresh(){
     location.reload();

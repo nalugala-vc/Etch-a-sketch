@@ -99,3 +99,13 @@
         }
     
 }
+@media only screen and (max-width:500px) {
+    .fields {
+        width: 300px;
+        position: absolute;
+        top: 15vh;
+        left: 6vh;
+        border: 2px solid #90604c;
+    }
+
+}
